@@ -28,13 +28,15 @@ body {
   align-items: center;
 }
 .main {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
 }
-.user, .balance-wrapper, .task {
+.user,
+.balance-wrapper,
+.task {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -43,12 +45,14 @@ body {
   background: #7b3e3e2b;
   transition: 0.2s;
 }
-.user:hover, .balance-wrapper:hover, .task:hover {
+.user:hover,
+.balance-wrapper:hover,
+.task:hover {
   background: #7b3e3e46;
   cursor: pointer;
 }
 .balance-photo {
-    width: 60px;
+  width: 60px;
 }
 .user-photo {
   width: 60px;
@@ -57,7 +61,16 @@ body {
   box-shadow: 0 0 3px rgba(255, 252, 101, 0.275);
 }
 .user-name {
+padding: 4px 10px;
+border-radius: 4px;
 }
+.user-name[contenteditable="true"] {
+  background: white;
+  
+}
+
+
+
 .user-status {
   font-weight: normal;
 }
@@ -71,13 +84,16 @@ body {
   width: 30px;
   padding: 5px;
   border-radius: 100px;
-  transition: .2s;
+  transition: 0.2s;
   /* background: #1b202416; */
-
 }
 
 .user-name-edit:hover {
   background: #1b20242f;
+}
+
+.user-name-edit:active {
+  background: #6abdcd81;
 }
 
 .circle {
@@ -85,7 +101,7 @@ body {
   height: 80px;
   border-radius: 100px;
   background: skyblue;
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -94,10 +110,15 @@ body {
   color: rgb(0, 0, 0);
 }
 .circle-wrapper {
+  position: relative;
   display: flex;
   gap: 20px;
+  width: 100%;
+  height: 500px;
 }
+
 .circle:hover {
+  z-index: 5;
   background: rgb(0, 255, 98);
 }
 
